@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Level Editor</title>
+	<meta charset="utf-8" />
+	<link rel="shortcut icon" href="img/favicon.ico" >
+    <link href="css/Style.css" rel="stylesheet" />
+    <link href="css/range.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="body">
+        <div id="plansza"></div>
+        <div id="menu">
+            <input id="sel" class="men" type="range" name="points" min="9" max="25">
+            <div class="men" id="wall">WALL</div>
+            <div class="men" id="enemy">ENEMY</div>
+            <div class="men" id="treasure">TREASURE</div>
+            <div class="men" id="light">LIGHT</div>
+            <div class="men" id="item1">ITEM_1</div>
+            <div class="men" id="item2">ITEM_2</div>
+            <div class="men" id="delete">DELETE</div>
+        </div>
+        <div id="json">
+            <textarea id="copy" readonly ></textarea>
+            <button id="gen" class="butt">Wygeneruj JSON'a</button>
+            <button id="send" class="butt">Prześlij JSON'a</button>
+            <a href="game.html"><button id="open" class="butt">Otwórz Stronę Gry</button></a>
+        </div>
+    </div>
+    <script src="js/prog.js"></script>
+    <script src="js/UI.js"></script>
+</body>
+</html>
